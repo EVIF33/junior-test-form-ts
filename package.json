@@ -6,7 +6,8 @@
     "dev": "vite",
     "lint": "biome check --write --diagnostic-level=error",
     "lint:all": "biome check --write",
-    "lint:types": "tsc --noEmit"
+    "lint:types": "tsc --noEmit",
+    "prepare": "husky"
   },
   "dependencies": {
     "react": "^19.1.0",
