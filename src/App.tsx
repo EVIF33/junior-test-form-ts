@@ -1,17 +1,15 @@
-import reactLogo from './assets/react.svg';
-
 import viteLogo from '/vite.svg';
-
+import reactLogo from './assets/react.svg';
 import { ImageList } from './components';
 
 function App() {
   return (
     <>
       <div>
-        <a href="https://vite.dev" target="_blank">
+        <a href="https://vite.dev" target="_blank" rel="noopener">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
-        <a href="https://react.dev" target="_blank">
+        <a href="https://react.dev" target="_blank" rel="noopener">
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
