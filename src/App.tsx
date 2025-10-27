@@ -1,21 +1,40 @@
-import viteLogo from '/vite.svg';
-import reactLogo from './assets/react.svg';
-import { ImageList } from './components';
+import { css, Global } from '@emotion/react';
+
+import { Form } from './components';
+import * as S from './global-styles';
+
+const globalStyles = css`
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+        background: #f8fafc;
+        color: #1f2937;
+        line-height: 1.6;
+    }
+
+    button {
+        font-family: inherit;
+        cursor: pointer;
+    }
+
+    input, textarea, select {
+        font-family: inherit;
+    }
+`;
 
 function App() {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank" rel="noopener">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank" rel="noopener">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <ImageList />
-    </>
+    <main>
+      <Global styles={globalStyles} />
+      <S.Container>
+        <Form />
+      </S.Container>
+    </main>
   );
 }
 

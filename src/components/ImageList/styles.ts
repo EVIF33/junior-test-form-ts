@@ -1,5 +1,8 @@
 import styled from '@emotion/styled';
 
 export const ImageListWrapper = styled.div`
-  background-color: red;
+    padding: 32px;
+    background-color: hotpink;
+    font-size: 24px;
+    border-radius: 4px;
 `;
